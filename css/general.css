@@ -36,7 +36,7 @@ ______02 COLORS
 -Tinst:#fdf2e9
 -Shades:#cf711f
 -Accents:
--Greys:#555 / #333
+-Greys:#555 / #333 /#6F6F6F
 
 ______03 SHADOWS
 
@@ -160,6 +160,10 @@ body {
 
 .center-text {
     text-align: center;
+}
+
+strong {
+    font-weight: 500;
 }
 
 .container {
