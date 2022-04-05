@@ -190,7 +190,7 @@
 .step-img-box::after {
     content: "";
     position: absolute;
-    background-color: #f8d8bd;
+    background-color: #fdf2e9;
     display: block;
     width: 60%;
     /* 60% of parent width can declare as p-b */
@@ -204,4 +204,127 @@
     font-size: 2rem;
     /* font-weight: 500; */
     line-height: 1.8rem;
+}
+
+
+/* ******************MEALS SECTION ****************** */
+
+.section-meals {
+    padding: 9.6rem 0;
+}
+
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.meal:nth-child(1):hover,
+.meal:nth-child(2):hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal:last-child {
+    box-shadow: none
+}
+
+.meal-img {
+    width: 100%;
+}
+
+.meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #40c057;
+    color: rgb(7, 7, 7);
+    padding: .4rem .8rem;
+    font-weight: 600;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    margin: 1.2rem 0 2rem 0;
+}
+
+.tag-vena {
+    background-color: rgb(47, 255, 57);
+}
+
+.tag-paleo {
+    background-color: rgba(255, 230, 0, 0.959);
+}
+
+.meal-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.meal-attribute {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.meal-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #cf711f
+}
+
+strong {
+    font-weight: 500;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.all-recipes {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #e67e22;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 3px;
+    transition: all .5s;
+}
+
+.link:hover,
+link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
 }
