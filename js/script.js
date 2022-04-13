@@ -35,6 +35,8 @@ allLink.forEach(link => {
     })
 })
 
+// allLink.style.scrollBehavior = "smooth"
+
 
 // Sticky Navigation
 
@@ -45,7 +47,7 @@ const observer = new IntersectionObserver(entries => {
 
     const ent = entries[0]
     if (!ent.isIntersecting) {
-        document.body.classList.add('sticky')
+        document.body.classList.add('sticky').style.transition = "all 2s";
     }
     if (ent.isIntersecting) {
         document.body.classList.remove('sticky')
