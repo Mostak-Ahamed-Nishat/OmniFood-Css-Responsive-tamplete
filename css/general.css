@@ -61,6 +61,7 @@ html {
     /* Default 1 rem=(16px) =>10/16*100=62.5%(rem) */
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
